@@ -1,9 +1,9 @@
-<!-- <app-header
+<app-header
  [menuElements]="menuElements"
  (rightElementClicked)="saludar()"
  [(tema)]="title"
 
- ></app-header> -->
+ ></app-header>
 
- <app-loader></app-loader>
+ <app-loader *ngIf="loading"></app-loader>
 <!-- <h1>{{title}}</h1> -->

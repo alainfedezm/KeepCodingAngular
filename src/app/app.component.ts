@@ -10,6 +10,7 @@ import { MenuElement } from '@core/interfaces/menu-element.interface';
 })
 export class AppComponent {
   title = 'claro';
+  loading:boolean = false;
   menuElements: MenuElement[] = [
     {
       title:'Catalogo',
@@ -22,6 +23,10 @@ export class AppComponent {
   ]
 
   saludar(){
+    this.loading = true;
+    setTimeout(()=>{
+      this.loading = false;
+    },5000)
     console.log("holaaaa");
   }
 }
