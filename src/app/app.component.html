@@ -5,5 +5,7 @@
 
  ></app-header>
 
- <app-loader *ngIf="loading"></app-loader>
+<!--Los componentes que se carguen los pinta aqui-->
+<router-outlet></router-outlet>
+<app-loader *ngIf="loading"></app-loader>
 <!-- <h1>{{title}}</h1> -->
