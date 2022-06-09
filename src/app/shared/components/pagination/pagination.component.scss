@@ -1,0 +1,26 @@
+.pagination{
+
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+
+  .pag{
+    position: absolute;
+    bottom: 0;
+    a {
+      color: black;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+  }
+
+  .active {
+    background-color: #e23636;
+    color: white;
+    border: 1px solid #e23636;
+  }
+
+}
+
+
+

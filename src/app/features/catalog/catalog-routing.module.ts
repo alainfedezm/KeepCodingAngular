@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SharedModule } from '@shared/shared.module';
 import { CatalogComponent } from './catalog.component';
 import { CatalogListComponent } from './pages/catalog-list/catalog-list.component';
 
@@ -23,7 +24,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports:
+  [
+    RouterModule.forChild(routes),
+    SharedModule,
+
+  ],
   exports: [RouterModule]
 })
 export class CatalogRoutingModule { }

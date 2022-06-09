@@ -1,0 +1,10 @@
+<section class="pagination">
+  <div class="pag">
+
+    <a (click) = "clickPage(1)">&laquo;</a>
+    <a (click)="clickPage(p)" *ngFor="let p of numbers" [ngClass]="{'active':p ===page}">{{p}}</a>
+
+    <a  (click) = "clickPage(totalPages)">&raquo;</a>
+  </div>
+
+</section>
