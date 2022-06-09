@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogRoutingModule } from './catalog-routing.module';
 import { CatalogComponent } from './catalog.component';
+import { CatalogListComponent } from './pages/catalog-list/catalog-list.component';
 
 
 @NgModule({
   declarations: [
-    CatalogComponent
+    CatalogComponent,
+    CatalogListComponent
   ],
   imports: [
     CommonModule,

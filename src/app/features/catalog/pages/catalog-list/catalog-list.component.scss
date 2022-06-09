@@ -1,0 +1,75 @@
+main{
+  width: 100%;
+  .section-form{
+    width: 100%;
+
+    .search-form{
+
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction:row;
+      padding: 10px;
+    }
+  }
+
+  .galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    .comic{
+      max-width: 400px;
+      .portada img{
+        width: 100%;
+
+      }
+      .titulo-year{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction:row;
+        .titulo{
+          width: 70%;
+        }
+        .year{
+          width: 30%;
+        }
+      }
+
+      .descr{
+
+
+        width: 100%;
+        max-height: 100px;
+        border: 2px solid;
+        border-color: black;
+        word-break: break-all;
+
+        p{
+          word-break: break-all;
+        }
+      }
+    }
+  }
+
+  .pagination{
+
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+
+    .pag{
+      position: absolute;
+      bottom: 0;
+      a {
+        color: black;
+        padding: 8px 16px;
+        text-decoration: none;
+
+      }
+    }
+
+  }
+
+}
+
