@@ -1,11 +1,18 @@
-<app-header
- [menuElements]="menuElements"
- (rightElementClicked)="saludar()"
- [(tema)]="title"
+<div class="principal">
 
- ></app-header>
+  <app-header
+  [menuElements]="menuElements"
+  (rightElementClicked)="saludar()"
+  [(tema)]="title"
 
-<!--Los componentes que se carguen los pinta aqui-->
-<router-outlet></router-outlet>
-<app-loader *ngIf="loading"></app-loader>
-<!-- <h1>{{title}}</h1> -->
+  ></app-header>
+
+  <!--Los componentes que se carguen los pinta aqui-->
+  <router-outlet></router-outlet>
+  <app-loader *ngIf="loading"></app-loader>
+  <!-- <h1>{{title}}</h1> -->
+
+
+</div>
+
+

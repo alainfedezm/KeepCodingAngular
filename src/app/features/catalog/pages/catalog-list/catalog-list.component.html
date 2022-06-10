@@ -1,16 +1,21 @@
+<div class="principal">
+  <div class="form">
+    <app-catalog-form (searchChange)="search($event)"></app-catalog-form>
+  </div>
+  <div class="shows-container">
+    <div class="show-items">
+        <app-catalog-item
+          *ngFor="let item of comics"
+          [comic]="item"
+        ></app-catalog-item>
+    </div>
+  </div>
 
-<section class="section-form">
-  <app-catalog-form (searchSubmission)="fetchApi()"></app-catalog-form>
-</section>
-
-<div class="items-container">
-  <app-catalog-item
-    *ngFor="let item of comics"
-    [comic]="item"
-  ></app-catalog-item>
+  {{totalPages}}
+  <app-pagination [(page)]="page" [totalPages]="totalPages" (pageChange)="pageChange" *ngIf="totalPages > 0"></app-pagination>
 </div>
-{{page}}
-<app-pagination [(page)]="page" [totalPages]="10"></app-pagination>
+
+
 
 
 

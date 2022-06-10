@@ -1,71 +1,29 @@
-main{
+.principal{
+
   width: 100%;
-  .section-form{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .form{
     width: 100%;
-
-    .search-form{
-
-      width: 90%;
-      display: flex;
-      justify-content: space-around;
-      flex-direction:row;
-      padding: 10px;
-    }
   }
-
-  .section-gallery{
-
-    display: grid;
-
-    grid-template-columns: repeat(auto-fit, 300px);
-
-    justify-content: space-around;
-
-    gap: 1em;
-
-    .comic{
-
-      .comic-img-container img{
-
-        width: 100%;
-
-      }
-
-      .title{
-
-        display: inline-block;
-
-        width: 70%;
-
-      }
-
-      .year{
-
-        display: inline-block;
-
-        min-width: 30%;
-
-
-
-      }
-
-      .description{
-
-        width: 100%;
-
-        max-height: 100px;
-
-        border: 2px solid black;
-
-        word-break: break-all;
-
-      }
-
+  .shows-container{
+    width: 80%;
+    .show-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(230px, 1fr));
+      gap: 1em;
     }
-
   }
 
 }
+
+
+
+
+
 
 
 

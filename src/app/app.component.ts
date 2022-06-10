@@ -6,7 +6,7 @@ import { MenuElement } from '@core/interfaces/menu-element.interface';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'claro';
